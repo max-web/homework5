@@ -1,0 +1,374 @@
+/*************************************************
+Global Styles
+*************************************************/
+
+* {
+	box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*Подключаем шрифты*/
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneuecyr-medium-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-medium-webfont.eot');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('../fonts/helveticaneuecyr-bold-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-bold-webfont.eot');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+body{
+	font-family: 'Helvetica Neue', Tahoma, serif;
+	font-size: 14px;
+}
+
+
+
+
+
+/*************************************************
+Header
+*************************************************/
+
+
+.header{
+	height: 43px;
+	background-image: url('../img/bg_header_noise.jpg');
+}
+
+
+
+/*меню*/
+.menu{
+	float: right;
+}
+.menu-item{
+	float: right;	
+}
+.menu-link{
+	display: block;
+
+	font-weight: bold;
+	color: #60b5ed;
+	text-decoration: none;
+	padding: 0 16px;
+	line-height: 43px;
+}
+.menu-link:hover{
+	color: #ffffff;
+	background-color: #4eabda;
+}
+
+
+/*Offer*/
+.offer{
+}
+
+
+.offer-desciption{
+	float: right;
+	position: relative;
+	padding-left: 50px;
+	padding-right: 17px;
+	padding-top: 2px;
+
+	color: #fefefe;
+
+
+	/*pixel perfect для разделителя*/
+	border-left: 1px solid #56a2dc;
+	height: 36px;
+	line-height: 31px;
+	margin-top: 4px;
+	margin-bottom: 3px;
+}
+
+.offer-desciption img{
+	position: absolute;
+	left: 20px;
+	top:7px;
+}
+
+/*offer CTA*/
+.offer-click-to-action{
+	color: #fefefe;
+	text-decoration: none;
+	font-weight: bold;
+
+	line-height: 41px;	
+	float: right;
+
+	padding: 0 13px;
+	margin-right: 20px;
+
+	background-image: linear-gradient(to bottom, #50afdc, #2e7ac4);
+	border: 1px solid #51a0da;
+}
+
+.offer-click-to-action .underline{
+	/*text-decoration: underline;*/
+	/*text-decoration-color: red;*/
+	/*отказался от такого решения из-за плохой кроссбраузерности*/
+
+	border-bottom: 2px solid #9ac2e4;
+	
+}
+
+
+
+
+
+
+
+/*************************************************
+Content with form
+*************************************************/
+
+
+
+.content{
+	position: relative;
+	min-height: 1071px;
+
+	background: url('../img/background-big-photo.jpg') no-repeat center center;;
+	
+	background-size: cover;
+}
+
+
+
+form{
+
+	/*центрирование*/
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	width: 560px;	
+	height: 613px;
+
+	/*background-color: red;*/
+	/*display: none;*/
+}
+
+.form-head{
+	background-color: rgba(0,0,0,0.63);
+	text-align: center;
+	line-height: 62px;
+	margin-bottom: 2px;
+
+	font-size: 24px;
+	color: #ffffff;
+
+}
+
+
+.form-body{
+	background-color: rgba(0,0,0,0.63);
+	height: 550px;
+	padding-top: 20px;
+}
+
+
+/*input - общие стили*/
+	.form-body input{
+		display: block;
+		margin: 16px auto;
+		width: 276px;
+		height: 36px;
+		line-height: 36px;
+		padding: 0 19px;
+		border: none;
+		color: #cccccc;
+		background-color: #111111;
+		border-bottom: 1px solid #484948;
+		outline: none;
+	}
+	.form-body input::-webkit-input-placeholder {
+		color:#cccccc;
+	}
+	.form-body input::-moz-placeholder          {
+		color:#cccccc;
+	}
+	.form-body input:-moz-placeholder           {
+		color:#cccccc;
+	}
+	.form-body input:-ms-input-placeholder      {
+		color:#cccccc;
+	}
+
+
+	.form-body input:focus{
+		outline:none;
+		background-image: linear-gradient(to top, #1b5288 0%, #1b5288 100%);
+		box-shadow: 0 1px 0 #4b4b4b, 
+			inset 0 2px 5px rgba(29, 26, 22, 0.2), 
+			0 0 9px rgba(47, 123, 197, 0.77), 
+			inset 0 0 2px rgba(0, 0, 0, 0.1);
+		color: #fffbfb;
+	}
+	.form-body input:focus::-webkit-input-placeholder {
+		color:#fffbfb;
+	}
+	.form-body input:focus::-moz-placeholder          {
+		color:#fffbfb;
+	}
+	.form-body input:focus:-moz-placeholder           {
+		color:#fffbfb;
+	}
+	.form-body input:focus:-ms-input-placeholder      {
+		color:#fffbfb;
+	}
+
+
+
+
+
+
+/*кнопка Fb login*/
+	.form-body .fb-login{
+		display: block;
+		margin: 15px auto 0px;
+		width: 276px;
+		position: relative;
+		padding-left: 10px;
+
+		height: 35px;
+		border-radius: 3px;
+
+		background-image: linear-gradient(to bottom, #3e5694, #2c4178);
+		border: none;
+		color: #fffefd;
+		box-shadow: inset 0px 1px #778ab4;
+		outline: none;
+	}
+
+	.form-body .fb-login:before{ /*значок f слева*/
+		content:'f';
+		position: absolute;
+		left:15px;
+		font-weight: bold;
+		font-size: 21px;
+		top: 0px;
+		padding-top: 6px;
+		
+		/*граница с тенью справа*/
+		border-right: 1px solid #1f3c76;
+		padding-right: 15px;
+		height: 29px;
+		box-shadow: 1px 0px 0px 0px #4d68ad
+	}
+
+	.form-body .fb-login .caret{ /*спецсимвол на кнопке справа*/
+		font-size: 18px;
+		position: relative;
+		bottom:-1px;
+	}
+
+	.form-body .fb-login .bold{ /*текст жирным*/
+		font-weight: bold;
+	}
+	
+	.form-body .fb-login:hover{
+		cursor: pointer;
+		background-image: linear-gradient(to bottom, #2c4178, #2c4178);
+	}
+
+
+
+
+
+
+/*разделитель*/
+	.form-body .delimiter{
+		width: 276px;
+		margin: 30px auto 30px;
+		background-image: url(../img/delimiter.png);
+		background-repeat: no-repeat;
+		background-position: 0px 7px;
+
+		color: #999999;
+		text-align: center;
+		font-size: 14px;
+	}
+
+	.delimiter hr{
+		color: #666666;
+		border-bottom: #000000;
+	}
+
+
+
+
+
+
+/*checkbox*/
+	.form-body .checkbox-wrapper{
+		display: block;
+		text-align: center;
+		color: #cccccc;
+		width: 276px;
+		margin: -12px auto 0px;
+	}
+	.form-body .checkbox{
+		display: inline-block;
+		width: auto;
+		height: auto;
+		position: relative;
+		bottom:-1px;
+		/*line-height: 10px;*/
+	}
+
+
+
+
+
+
+
+/*Кнопка Send*/
+	.form-body .btn-submit{
+		display: block;
+		margin: 7px auto;
+		width: 151px;
+		text-align: center;
+
+		height: 35px;
+		line-height: 35px;
+
+		border: 1px solid #4e9ed8;
+		border-radius: 3px;
+		color: #ffffff;
+		font-weight: bold;
+		background-image: linear-gradient(to bottom, #50aedb, #2e7ac4);
+	}
+
+
+
+
+
+
+
+
+
+/*текстовка Policy*/
+	.form-body .policy{
+		width: 310px;
+		margin: 20px auto;
+		color: #cccccc;
+		text-align: center;
+	}
